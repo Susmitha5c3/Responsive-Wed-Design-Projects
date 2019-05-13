@@ -1,0 +1,70 @@
+html, body{
+    font-family: "Calibri", Trebuchet MS sans-serif;
+    text-align:center;
+    height:100%;
+    width:100%;
+    background: black;
+    color:  white;
+  }
+  #main{
+    margin:10px auto;
+    padding:15px;
+    border-radius:15px;
+    background: url("https://www.wallpapersin4k.org/wp-content/uploads/2017/04/Apple-Wallpaper-For-Mobile-Phones.jpeg") no-repeat center;
+    
+    }
+  #title{
+    font-family:"Monotype Corsiva", Helvetica, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+  }
+  #cap {
+    color:white;
+  }
+  #about {
+    font-size: 3em;
+    text-align: left;
+    margin-left: 100px;
+  }
+  hr {
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:100px;
+  }
+  img{
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+  }
+  #img-div {
+    margin-top:-50px;
+    margin-right:120px;
+    border:0px solid;
+    flex-direction: column;
+  }
+  #container {
+      display: flex;
+      height: 250px;
+    flex-direction: row-reverse;
+    }
+  #img-caption{
+    margin: 10px;
+    font-size: 15px;
+  }
+  #image{
+    width: 500px;
+  }
+  #tribute-info {
+    margin-left:120px;
+    margin-top:-70px;
+    margin-right: 40px;
+    text-align: left;
+    font-size: 15px;
+  }
+  #quote{
+    font-size: 2em;
+    font-style: italic;
+  }
+  

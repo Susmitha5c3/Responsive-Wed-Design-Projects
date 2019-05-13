@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction" rel="internal">Introduction</a></li>
+      <li><a class="nav-link" href="#Why_python?"
+         rel="internal">Why Python?</a></li>
+      <li><a class="nav-link" href="#Variables"
+         rel="internal">Variables</a></li>
+      <li><a class="nav-link" href="#Data_types"
+         rel="internal">Data Types</a></li>
+      <li><a class="nav-link" href="#Data_structures"
+         rel="internal">Data Structures</a></li>
+      <li><a class="nav-link" href="#Functions"
+         rel="internal">Functions</a></li>
+      <li><a class="nav-link" href="#Exception_handling"
+         rel="internal">Exception Handling</a></li>
+      <li><a class="nav-link" href="#Reference"
+         rel="internal">Reference</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales. Van Rossum led the language community until stepping down as leader in July 2018.</p>
+        <p>Python is a programming language that lets you work quickly and integrate systems more efficiently.</p>
+        <p>There are two major Python versions- Python 2 and Python 3. Both are quite different.</p>
+        <p><b>Beginning with Python programming:</b></p>
+        <p><b>1) Finding an Interpreter:</b></p>
+        <p>Before we start Python programming, we need to have an interpreter to interpret and run our programs. There are certain online interpreters like https://ide.geeksforgeeks.org/, http://ideone.com/ or http://codepad.org/  that can be used to start Python without installing an interpreter.</p>
+        <p><b>2) Writing first program:</b></p>
+        <p>Following is first program in Python</p>
+        <code>print("GeeksQuiz") </code>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Why_python?">
+      <header>Why Python?</header>
+      <article>
+        <p>Python is a multi-paradigm programming language. Object-oriented programming and structured programming are fully supported, and many of its features support functional programming and aspect-oriented programming (including by metaprogramming and metaobjects (magic methods)). Many other paradigms are supported via extensions, including design by contract and logic programming. Python uses dynamic typing, and a combination of reference counting and a cycle-detecting garbage collector for memory management. It also features dynamic name resolution (late binding), which binds method and variable names during program execution.</p>
+        
+        <p>The language's core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:</p>
+        
+        <li>Beautiful is better than ugly.</li>
+        <li>Explicit is better than implicit.</li>
+        <li>Simple is better than complex.</li>
+        <li>Complex is better than complicated</li>
+        <li>Readability counts</li>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <article>
+        <p>Unlike other programming languages, Python has no command for declaring a variable.A variable is created the moment you first assign a value to it.</p>
+        <code>x = 5
+  y = "John"
+  print(x)
+  print(y)</code>
+        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+        <li>A variable name must start with a letter or the underscore character.</li>
+        <li>A variable name cannot start with a number.</li>
+        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Data_types">
+      <header>Data Types</header>
+      <article>
+        <p>The following are some common data types:</p>
+        <p><b>Integers</b></p>
+        <p>In Python 3, there is effectively no limit to how long an integer value can be. Of course, it is constrained by the amount of memory your system has, as are all things, but beyond that an integer can be as long as you need it to be:</p>
+        <code>print(123123123123123123123123123123123123123123123123 + 1)</code>
+        <p><b>Floating-point numbers</b></p>
+        <p>The float type in Python designates a floating-point number. float values are specified with a decimal point. Optionally, the character e or E followed by a positive or negative integer may be appended to specify scientific notation:</p>
+        <code>>>> print(4.2)
+  4.2
+  >>> type(4.2)
+  class 'float'
+  >>> 4.
+  4.0
+  >>> .2
+  0.2
+  
+  >>> .4e7
+  4000000.0
+  >>> type(.4e7)
+  class 'float'
+  >>> 4.2e-4
+  0.00042</code>
+        <p><b>Complex Numbers</b></p>
+        <p>Complex numbers are specified as (real part)+(imaginary part)j. For example:</p>
+        <code>>>> 2+3j
+  (2+3j)
+  >>> type(2+3j)
+  class 'complex'
+        </code>
+        <p><b>Strings</b></p>
+        <p>Strings are sequences of character data. The string type in Python is called str.String literals may be delimited using either single or double quotes. All the characters between the opening delimiter and matching closing delimiter are part of the string:</p>
+        <code>>>> print("I am a string.")
+  I am a string.
+  >>> type("I am a string.")
+  class 'str'
+  
+  >>> print('I am too.')
+  I am too.
+  >>> type('I am too.')
+  class 'str'
+        </code>
+      </article>
+    </section>
+    
+    <section class="main-section" id="Data_structures">
+      <header>Data Structures</header>
+      <article>
+        <p>There are quite a few data structures available. The builtins data structures are: lists, tuples, dictionaries, strings, sets and frozensets.</p>
+        <p>Lists, strings and tuples are ordered sequences of objects. Unlike strings that contain only characters, list and tuples can contain any type of objects. Lists and tuples are like arrays. Tuples like strings are immutables. Lists are mutables so they can be extended or reduced at will. Sets are mutable unordered sequence of unique elements whereas frozensets are immutable sets.</p>
+        <p>Lists are enclosed in brackets:</p>
+        <code>l = [1, 2, 3, 4, 5]</code>
+        <p>Tuples are enclosed in parentheses:</p>
+        <code>t = (1, 2, "a")</code>
+        <p>Dictionaries are built with curly brackets:</p>
+        <code>d = {"a":1, "b":2}</code>
+        <p>Sets are constructed from a sequence (or some other iterable object). Since sets cannot have duplicated, there are usually used to build sequence of unique items (e.g., set of identifiers).</p>
+        <code>>>> a = set([1, 2, 3, 4])
+  >>> b = set([3, 4, 5, 6])
+  >>> a | b # Union
+  {1, 2, 3, 4, 5, 6} </code>
+      </article>
+    </section>
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <article>
+        <p>A function is a set of statements that take inputs, do some specific computation and produces output. The idea is to put some commonly or repeatedly done task together and make a function, so that instead of writing the same code again and again for different inputs, we can call the function.
+  Python provides built-in functions like print(), etc. but we can also create your own functions. These functions are called user-defined functions.</p>
+        <code># A simple Python function to check 
+  # whether x is even or odd 
+  def evenOdd( x ): 
+      if (x % 2 == 0): 
+          print "even"
+      else: 
+          print "odd"
+    
+  # Driver code 
+  evenOdd(2) 
+  evenOdd(3) </code>
+      </article>
+    </section>
+    <section class="main-section" id="Exception_handling">
+      <header>Exception Handling</header>
+      <article>
+        <p>If you have some suspicious code that may raise an exception, you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.</p>
+        <p>This example opens a file, writes content in the, file and comes out gracefully because there is no problem at all −</p>
+        <code>try:
+     fh = open("testfile", "w")
+     fh.write("This is my test file for exception handling!!")
+  except IOError:
+     print "Error: can\'t find file or read data"
+  else:
+     print "Written content in the file successfully"
+     fh.close()
+        </code>
+        <p>This kind of a try-except statement catches all the exceptions that occur. Using this kind of try-except statement is not considered a good programming practice though, because it catches all exceptions but does not make the programmer identify the root cause of the problem that may occur.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article><li>All the matter for this documentation is taken from <a href="https://www.tutorialspoint.com/python/index.htm" taget="_blank">Tutorial's Point</a></li>
+      </article>
+    </section>
+  </main>
+    </body>
+</html>

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+
+* {
+  margin : 0;
+  padding: 0;
+
+}
+body {
+  background-color: #FFFFFF;
+  font-family: 'Slabo 27px', serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  min-width: 360px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  min-height: 75px;
+  top: 0;
+  background:#FFFFFF;
+}
+
+#logo {
+  min-width: 250px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#header-img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+#nav-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#nav-bar ul li,footer ul li {
+  display: inline-block;
+  margin: 20px 30px;
+  font-size: 1.2em;
+  list-style-type: none;
+  
+}
+.nav-link, .footer-nav {
+  color: #606060;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #FF3333;
+  text-decoration: underline;
+}
+.nav-link:visited {
+  color: #DC143C;
+}
+.nav-link:visited:hover {
+  color: #DC143C;
+  text-decoration: underline;
+}
+section, footer{
+  width: 75%;
+  margin: 0 auto;
+}
+
+#get-start {
+  margin-top : 205px;
+  text-align: center;
+}
+#get-start h1 {
+  margin: 20px 0;
+}
+#form input {
+  display: block;
+
+}
+#email {
+  margin: 0 auto;
+  width: 220px;
+  height: 25px;
+  padding: 0 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+#submit, .pricing-grid button {
+  height: 40px;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto;
+  font-weight: 900;
+  border: 0;
+  border-radius: 3px;
+  background-color: #FF6666;
+}
+#submit:hover, .pricing-grid button:hover {
+  animation-name: btn-change;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn-change {
+  100% {
+    background-color: orangered;
+  }
+}
+.grid {
+   margin: 50px 0px;
+}
+.feature-logo {
+  text-align: center;
+  width: 19%;
+  color: red;
+  display: inline-block;
+}
+.feature-desc {
+  width: 80%;
+  display: inline-block;
+}
+#hardware-logo {
+  width:30%;
+}
+#shipping-logo {
+  width: 50%;
+}
+
+#quality-logo {
+  width: 30%;
+}
+
+#video {
+  width: 100%;
+  max-width: 560px;
+  display: block;
+  margin: 50px auto;
+  align: right;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+}
+.pricing-grid {
+  width: 33%;
+  min-width: 200px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #595959;
+  border-radius: 8px;
+  align-self: center;
+  justify-self: center;
+}
+
+.pricing-grid h3 {
+  width: 100%;
+  height: 40px;
+  padding: 0.7em 0;
+  color: #1D1F21;
+  font-size: 1.2em;
+  background: #DDDDDD;
+  border-radius: 8px 8px 0 0;
+
+}
+.pricing-grid h4 {
+  width: 100%;
+  height: 40px;
+  font-size: 2em;
+  color: #1D1F21;
+}
+.pricing-grid ul {
+  list-style-type: none; 
+}
+.pricing-grid ul li{
+  padding: 0.3em;
+  margin: 0;
+}
+.pricing-grid button {
+  width: 75px;
+}
+footer {
+  background: #DDDDDD;
+  text-align: right;
+  min-height: 75px;
+  border-radius: 5px 5px 0 0;
+}
+footer p {
+  color: #444;
+}
+
+@media (max-width: 850px) {
+  section, footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pricing-grid {
+    width: 320px;
+  }
+  #pricing {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  section {
+    text-align: center;
+    width: 100%;
+  }
+  .feature-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+@media (max-width: 650px) {
+  #logo {
+    margin: 10px auto 0 auto;
+  }
+  .pricing-grid {
+    width: 90%;
+    max-width: 270px;
+  }
+  #nav-bar {
+    position: static;
+    width: 100%;
+    top: 50px;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #75A0D3;
+  }
+  #nav-bar ul li,footer ul li {
+    display: block;
+    margin: 0 ;
+    padding: 0;
+    text-align: center;
+  }
+  #get-start {
+    margin-top: 120px;
+  }
+}

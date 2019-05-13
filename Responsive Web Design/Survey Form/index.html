@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+<h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+    Let us know the current technologies in present software industry</p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class='rightTab'>
+        <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class='rightTab'>
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class='rightTab'>
+        <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="Age" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentpos">Which option describes your current role?</label>
+      </div>
+      <div class='rightTab'>
+        <select id="dropdown" name="currentPos" class="dropdown">
+        <option disabled value>Select an option</option>
+          <option value="student">Student</option>
+          <option value="develop">Developer</option>
+          <option value="research">Researcher </option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userinvolement">* How likely do you invole into current technologies?</label>
+      </div>
+      <div class ="rightTab">
+        <ul style ="list-style: none;">
+          <li class="radio"><label>Completely<input name="radio-buttons" value="1" type="radio" class="userInvolvement" ></label></li>
+          <li class="radio"><label>Partially<input name="radio-buttons" value="2" type="radio" class="userInvolvement" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userInvolvement" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for ="preferences">Things you like most in current technologies<br>(Check all that apply)</label>
+      </div>
+      <div class ="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label>Font-End Web Development<input name="prefer"type="checkbox" value="1" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Back-End Web Development<input name="prefer"type="checkbox" value="2" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Mean Stack Web Development<input name="prefer" type="checkbox" value="3" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Artifical Intelligence<input name="prefer" type="checkbox" value="4" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Block Chain<input name="prefer" type="checkbox" value="5" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Machine Learning<input name="prefer" type="checkbox" value="6" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Deep Learning<input name="prefer" type="checkbox" value="7" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Internet Of Things(IoT)<input name="prefer" type="checkbox" value="8" class="userInvolvement"></label></li>
+          <li class="checkbox"><label>Other<input name="prefer" type="checkbox" value="9" class="userInvolvement"></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label>Want to share your experience in technology?</label>
+      </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Write your experiences here..."></textarea>
+        </div>
+      </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
